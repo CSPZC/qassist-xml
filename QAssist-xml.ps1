@@ -115,25 +115,6 @@ Function normalize #функция присваивает значения но�
     Write-host -Foregroundcolor Green "`nНормализация значений ЭД завершена.`n"    
 }
 
-Function bdprFAQDeploy()
-{
-    #test comment!
-    $release_notes = "C:\Users\admin\Desktop\test\release_notes.pdf"
-    $man = "C:\Users\admin\Desktop\test\Risks.pdf"
-
-    Copy-Item $release_notes -Destination "C:\Projects\Risk\Source\Install\Таможня\Client\files\"
-    Copy-Item $release_notes -Destination "C:\Projects\Risk\Source\Install\ФТС\Client\files"
-    Copy-Item $release_notes -Destination "C:\Projects\Risk\Source\Install\ФТС\synchronizer\files"
-    Copy-Item $release_notes -Destination "C:\Projects\Risk\Source\Install\РТУ\Client\files"
-    Copy-Item $release_notes -Destination "C:\Projects\Risk\Source\Install\РТУ\synchronizer\files"
-
-    Copy-Item $man -Destination "C:\Projects\Risk\Source\Install\Таможня\Client\files\"
-    Copy-Item $man -Destination "C:\Projects\Risk\Source\Install\ФТС\Client\files"
-    Copy-Item $man -Destination "C:\Projects\Risk\Source\Install\ФТС\synchronizer\files"
-    Copy-Item $man -Destination "C:\Projects\Risk\Source\Install\РТУ\Client\files"
-    Copy-Item $man -Destination "C:\Projects\Risk\Source\Install\РТУ\synchronizer\files"
-}
-
 Function userEditXmlByXpath()
 {
     $userInput = '2020-10-02T07:34:49+03:00' # пример пользовательского ввода
@@ -464,7 +445,6 @@ function ShowMenu()
      write-host " "
      Write-Host "Сборочные удобства:"
      Write-Host " "
-     Write-Host "    '555' -  доставка справки пользователя для БДПР"
 	 Write-Host "`n"
      Write-Host -foregroundcolor Green "    'Q' - выход" 
 }
@@ -502,10 +482,6 @@ do
                 cls
                 'Упаковка ЭД в .bin'
                 xml2bin
-           }'555' {
-                cls
-                'Доставка справки пользователя для БДПР'
-                bdprFAQDeploy
            }'123' {
                 cls
                 'Запуск нормализатора в тестовом виде'
