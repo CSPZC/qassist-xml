@@ -420,14 +420,6 @@ function ShowMenu()
     chcp 65001
     cls
     Write-Host -foregroundcolor Magenta "
-     _   _______  _____  ___________ _____ 
-    | | / /  _  \/  ___||  _  |  ___|_   _|
-    | |/ /| | | | \ `--. | | | | |_    | |  
-    |    \| | | |  `--. \| | | |  _|   | |  
-    | |\  \ |/ / /\__/ /\ \_/ / |     | |  
-    \_| \_/___/  \____/  \___/\_|     \_/  
-                                        
-
     QAssist - Quality Assurance Assistant (c) Powered by .cc 03.07.2020" 
 
      Write-Host -foregroundColor White "`n============================= $Title ===============================`n"   
