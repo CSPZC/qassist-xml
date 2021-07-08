@@ -1,5 +1,7 @@
 # qassist-xml
-few procedure tools to do various tasks related with "tons " of xml processing
+##Несколько функций, которые призваны сделать жизнь qa легче при работе с тоннами xml.
+
+##..to do various tasks related with "tons " of xml processing..
 
 
 Временный способ получить коллекцию данных из ЭД: 
