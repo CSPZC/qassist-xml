@@ -1,5 +1,5 @@
 # qassist-xml
-Several features that are meant to make qa's life easier when dealing with tons of xml.
+Several features that are meant to make qa's life easier when dealing with tons of xml. It's really cross-platform clutch that does not need to be .Net Linq etc libs preinstalled=)
 
 ..to do various tasks related with "tons" of xml processing ..
 
